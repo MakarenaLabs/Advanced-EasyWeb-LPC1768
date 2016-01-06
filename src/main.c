@@ -3,8 +3,7 @@
  Name        : main.c
  Author      : Enrico Giordano - MakarenaLabs
  Version     :
- Copyright   : Copyright (C) 2015
- Description : main definition
+ Copyright   : Copyright (C) 2015 Description : main definition
 ===============================================================================
  */
 
@@ -49,7 +48,7 @@ void LED_Off (unsigned int num) {
 	LPC_GPIO2->FIOPIN &= ~led_mask[num];
 }
 
-volatile uint16_t GusSinTable[45] =                                       /* ÕýÏÒ±í                       */
+volatile uint16_t GusSinTable[45] =                                      
 {
 		410, 467, 523, 576, 627, 673, 714, 749, 778,
 		799, 813, 819, 817, 807, 789, 764, 732, 694,
@@ -74,10 +73,10 @@ main( void )
 		for(j = 0; j < 100; j++)
 			WebSide[i][j] = '\0';
 
-	for(i = 0; i < 7; i++)
+	for(i = 0; i < LED_NUM-1; i++)
 		led_flag[i] = 0;
 
-	for(i = 0; i < 7; i++)
+	for(i = 0; i < LED_NUM-1; i++)
 		LED_Off(i);
 
 	memcpy(WebSide,WebSide_guest,sizeof(char) * sizeof(WebSide_guest));
