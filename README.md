@@ -20,7 +20,7 @@ Test Demo:
 - connect your PC via ETH cable and configure your local network in order to comunicate to 192.168.1.123
 
 ## HowTo works
-The core of this project implements a simple char-by-char interpreter of HTTP GET string passing by browser or other. When a complete message is sent to LPC1768, the "if (SocketStatus & SOCK_DATA_AVAILABLE)" is checked and the message was processed with internal software logic of interpreter ("manage_request()" function). The views is stored in RAM in a char[][] described in "src/Webside.h".
+The core of this project implements a simple char-by-char interpreter of HTTP GET string passing by browser or other. When a complete message is sent to LPC1768, the "if (SocketStatus & SOCK_DATA_AVAILABLE)" is checked and the message was processed with internal software logic of interpreter ("manage_request()" function). The views are stored in RAM in a char[][] described in "src/Webside.h".
 
 ## HowTo use this
 You can modify the interpreter simply modifying "manage_request()" body function, and view modifying "src/Webside.h" function.
