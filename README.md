@@ -26,5 +26,5 @@ The core of this project implements a simple char-by-char interpreter of HTTP GE
 You can modify the interpreter simply modifying "manage_request()" body function, and view modifying "src/Webside.h" function.
 
 ## Credits
-This project belongs to MakarenaLabs and source code was written by Enrico Giordano, distributed as CC BY license.
+This project belongs to MakarenaLabs and source code was written by Enrico Giordano.
 
